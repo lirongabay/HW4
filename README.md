@@ -37,6 +37,3 @@ This project was built as part of a Web / JavaScript assignment and demonstrates
    - No server is required.
 
 ---
-
-## File Structure
-
