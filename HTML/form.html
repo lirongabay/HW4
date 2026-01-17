@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admissions Calculator</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <h2 class="title">College Admissions Calculator</h2> 
+    
+
+        <form class="form"> 
+         
+            <div class="row">
+                <label class="lbl1">Age:</label>
+                <input type="text" id="age">   
+            </div>
+
+           
+             <fieldset class="rowgray">
+                <legend>select from the below options:</legend>
+                <label> 
+                    <input type="radio" id="psycometric" name="acceptance"> Psycometric and Bagrut
+                </label>
+                <label> 
+                    <input type="radio" id="mechina" name="acceptance"> Mechina and Bagrut
+                </label>
+            </fieldset>
+            
+            <div class="row">
+                <label class="lbl1">Psycometric Grade:</label>
+                <input type="text" id="gradePsycometric">
+            </div>
+
+             <div class="row">
+                <label class="lbl1">Bagrut Grade:</label>
+                <input type="text" id="gradeBagrut">
+            </div>
+
+              <div class="row">
+                <label class="lbl1"> Mechina Grade:</label>
+                <input type="text" id="gradeMechina">
+            </div>
+
+            <div class="action">
+                <input type="button" value="validate" onclick="validate()">
+            </div>
+            
+            <div id="resultMessage"></div>
+        </form>
+
+    </div>
+
+    
+</body>
+<script src="formscript.js"></script>
+
+</html>
