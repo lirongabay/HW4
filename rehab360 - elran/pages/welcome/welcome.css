@@ -1,0 +1,46 @@
+/* Page styles - Welcome (role selection) */
+
+.welcome{
+  min-height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+  padding: 28px 0 42px;
+}
+
+.welcome__card{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) + 4px);
+  box-shadow: var(--shadow);
+  padding: 26px;
+}
+
+.welcome__header{ max-width: 720px; }
+
+.role-grid{
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.role{
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.welcome__footer{ margin-top: 16px; }
+
+@media (max-width: 900px){
+  .welcome{ min-height: calc(100vh - 64px); }
+}
+
+@media (max-width: 700px){
+  .role-grid{ grid-template-columns: 1fr; }
+  .welcome__card{ padding: 18px; }
+}
